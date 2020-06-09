@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgeProTask", "EdgeProTask\EdgeProTask.csproj", "{EFA5DD9F-99FD-48C6-B596-8ED330D25A75}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL", "DLL\DLL.csproj", "{420B4FB7-1B3D-454A-9AF2-5313E3DFF90A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgProDemo", "EdgProDemo\EdgProDemo.csproj", "{66698FF6-533E-49E1-AAD3-7F22206E6737}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{1F5821F9-1A46-42E9-8EF9-8152F2EF37E6}"
@@ -19,14 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EFA5DD9F-99FD-48C6-B596-8ED330D25A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFA5DD9F-99FD-48C6-B596-8ED330D25A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFA5DD9F-99FD-48C6-B596-8ED330D25A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFA5DD9F-99FD-48C6-B596-8ED330D25A75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{420B4FB7-1B3D-454A-9AF2-5313E3DFF90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{420B4FB7-1B3D-454A-9AF2-5313E3DFF90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{420B4FB7-1B3D-454A-9AF2-5313E3DFF90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{420B4FB7-1B3D-454A-9AF2-5313E3DFF90A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66698FF6-533E-49E1-AAD3-7F22206E6737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66698FF6-533E-49E1-AAD3-7F22206E6737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66698FF6-533E-49E1-AAD3-7F22206E6737}.Release|Any CPU.ActiveCfg = Release|Any CPU
