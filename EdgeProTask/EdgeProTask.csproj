@@ -1,0 +1,441 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-EdgeProTask-F4297877-8E2D-4933-A861-67FF684486B6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bower_components\bootstrap\.bower.json" />
+    <Content Include="bower_components\bootstrap\bower.json" />
+    <Content Include="bower_components\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="bower_components\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bower_components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bower_components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bower_components\bootstrap\grunt\configBridge.json" />
+    <Content Include="bower_components\bootstrap\less\.csscomb.json" />
+    <Content Include="bower_components\bootstrap\package.json" />
+    <Content Include="bower_components\jquery-validation-unobtrusive\.bower.json" />
+    <Content Include="bower_components\jquery-validation-unobtrusive\bower.json" />
+    <Content Include="bower_components\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="bower_components\jquery-validation\.bower.json" />
+    <Content Include="bower_components\jquery-validation\bower.json" />
+    <Content Include="bower_components\jquery-validation\package.json" />
+    <Content Include="bower_components\jquery-validation\validation.jquery.json" />
+    <Content Include="bower_components\jquery\.bower.json" />
+    <Content Include="bower_components\jquery\AUTHORS.txt" />
+    <Content Include="bower_components\jquery\bower.json" />
+    <Content Include="bower_components\jquery\LICENSE.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bower_components\bootstrap\CHANGELOG.md" />
+    <None Include="bower_components\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="bower_components\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="bower_components\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="bower_components\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="bower_components\bootstrap\dist\js\bootstrap.js" />
+    <None Include="bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="bower_components\bootstrap\dist\js\npm.js" />
+    <None Include="bower_components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="bower_components\bootstrap\Gruntfile.js" />
+    <None Include="bower_components\bootstrap\grunt\.jshintrc" />
+    <None Include="bower_components\bootstrap\grunt\bs-commonjs-generator.js" />
+    <None Include="bower_components\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <None Include="bower_components\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <None Include="bower_components\bootstrap\grunt\bs-raw-files-generator.js" />
+    <None Include="bower_components\bootstrap\grunt\sauce_browsers.yml" />
+    <None Include="bower_components\bootstrap\js\.jscsrc" />
+    <None Include="bower_components\bootstrap\js\.jshintrc" />
+    <None Include="bower_components\bootstrap\js\affix.js" />
+    <None Include="bower_components\bootstrap\js\alert.js" />
+    <None Include="bower_components\bootstrap\js\button.js" />
+    <None Include="bower_components\bootstrap\js\carousel.js" />
+    <None Include="bower_components\bootstrap\js\collapse.js" />
+    <None Include="bower_components\bootstrap\js\dropdown.js" />
+    <None Include="bower_components\bootstrap\js\modal.js" />
+    <None Include="bower_components\bootstrap\js\popover.js" />
+    <None Include="bower_components\bootstrap\js\scrollspy.js" />
+    <None Include="bower_components\bootstrap\js\tab.js" />
+    <None Include="bower_components\bootstrap\js\tooltip.js" />
+    <None Include="bower_components\bootstrap\js\transition.js" />
+    <None Include="bower_components\bootstrap\less\.csslintrc" />
+    <None Include="bower_components\bootstrap\less\alerts.less" />
+    <None Include="bower_components\bootstrap\less\badges.less" />
+    <None Include="bower_components\bootstrap\less\bootstrap.less" />
+    <None Include="bower_components\bootstrap\less\breadcrumbs.less" />
+    <None Include="bower_components\bootstrap\less\button-groups.less" />
+    <None Include="bower_components\bootstrap\less\buttons.less" />
+    <None Include="bower_components\bootstrap\less\carousel.less" />
+    <None Include="bower_components\bootstrap\less\close.less" />
+    <None Include="bower_components\bootstrap\less\code.less" />
+    <None Include="bower_components\bootstrap\less\component-animations.less" />
+    <None Include="bower_components\bootstrap\less\dropdowns.less" />
+    <None Include="bower_components\bootstrap\less\forms.less" />
+    <None Include="bower_components\bootstrap\less\glyphicons.less" />
+    <None Include="bower_components\bootstrap\less\grid.less" />
+    <None Include="bower_components\bootstrap\less\input-groups.less" />
+    <None Include="bower_components\bootstrap\less\jumbotron.less" />
+    <None Include="bower_components\bootstrap\less\labels.less" />
+    <None Include="bower_components\bootstrap\less\list-group.less" />
+    <None Include="bower_components\bootstrap\less\media.less" />
+    <None Include="bower_components\bootstrap\less\mixins.less" />
+    <None Include="bower_components\bootstrap\less\mixins\alerts.less" />
+    <None Include="bower_components\bootstrap\less\mixins\background-variant.less" />
+    <None Include="bower_components\bootstrap\less\mixins\border-radius.less" />
+    <None Include="bower_components\bootstrap\less\mixins\buttons.less" />
+    <None Include="bower_components\bootstrap\less\mixins\center-block.less" />
+    <None Include="bower_components\bootstrap\less\mixins\clearfix.less" />
+    <None Include="bower_components\bootstrap\less\mixins\forms.less" />
+    <None Include="bower_components\bootstrap\less\mixins\gradients.less" />
+    <None Include="bower_components\bootstrap\less\mixins\grid-framework.less" />
+    <None Include="bower_components\bootstrap\less\mixins\grid.less" />
+    <None Include="bower_components\bootstrap\less\mixins\hide-text.less" />
+    <None Include="bower_components\bootstrap\less\mixins\image.less" />
+    <None Include="bower_components\bootstrap\less\mixins\labels.less" />
+    <None Include="bower_components\bootstrap\less\mixins\list-group.less" />
+    <None Include="bower_components\bootstrap\less\mixins\nav-divider.less" />
+    <None Include="bower_components\bootstrap\less\mixins\nav-vertical-align.less" />
+    <None Include="bower_components\bootstrap\less\mixins\opacity.less" />
+    <None Include="bower_components\bootstrap\less\mixins\pagination.less" />
+    <None Include="bower_components\bootstrap\less\mixins\panels.less" />
+    <None Include="bower_components\bootstrap\less\mixins\progress-bar.less" />
+    <None Include="bower_components\bootstrap\less\mixins\reset-filter.less" />
+    <None Include="bower_components\bootstrap\less\mixins\reset-text.less" />
+    <None Include="bower_components\bootstrap\less\mixins\resize.less" />
+    <None Include="bower_components\bootstrap\less\mixins\responsive-visibility.less" />
+    <None Include="bower_components\bootstrap\less\mixins\size.less" />
+    <None Include="bower_components\bootstrap\less\mixins\tab-focus.less" />
+    <None Include="bower_components\bootstrap\less\mixins\table-row.less" />
+    <None Include="bower_components\bootstrap\less\mixins\text-emphasis.less" />
+    <None Include="bower_components\bootstrap\less\mixins\text-overflow.less" />
+    <None Include="bower_components\bootstrap\less\mixins\vendor-prefixes.less" />
+    <None Include="bower_components\bootstrap\less\modals.less" />
+    <None Include="bower_components\bootstrap\less\navbar.less" />
+    <None Include="bower_components\bootstrap\less\navs.less" />
+    <None Include="bower_components\bootstrap\less\normalize.less" />
+    <None Include="bower_components\bootstrap\less\pager.less" />
+    <None Include="bower_components\bootstrap\less\pagination.less" />
+    <None Include="bower_components\bootstrap\less\panels.less" />
+    <None Include="bower_components\bootstrap\less\popovers.less" />
+    <None Include="bower_components\bootstrap\less\print.less" />
+    <None Include="bower_components\bootstrap\less\progress-bars.less" />
+    <None Include="bower_components\bootstrap\less\responsive-embed.less" />
+    <None Include="bower_components\bootstrap\less\responsive-utilities.less" />
+    <None Include="bower_components\bootstrap\less\scaffolding.less" />
+    <None Include="bower_components\bootstrap\less\tables.less" />
+    <None Include="bower_components\bootstrap\less\theme.less" />
+    <None Include="bower_components\bootstrap\less\thumbnails.less" />
+    <None Include="bower_components\bootstrap\less\tooltip.less" />
+    <None Include="bower_components\bootstrap\less\type.less" />
+    <None Include="bower_components\bootstrap\less\utilities.less" />
+    <None Include="bower_components\bootstrap\less\variables.less" />
+    <None Include="bower_components\bootstrap\less\wells.less" />
+    <None Include="bower_components\bootstrap\LICENSE" />
+    <None Include="bower_components\bootstrap\nuget\bootstrap.less.nuspec" />
+    <None Include="bower_components\bootstrap\nuget\bootstrap.nuspec" />
+    <None Include="bower_components\bootstrap\nuget\MyGet.ps1" />
+    <None Include="bower_components\bootstrap\package.js" />
+    <None Include="bower_components\bootstrap\README.md" />
+    <None Include="bower_components\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="bower_components\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="bower_components\jquery-validation\changelog.md" />
+    <None Include="bower_components\jquery-validation\CONTRIBUTING.md" />
+    <None Include="bower_components\jquery-validation\dist\additional-methods.js" />
+    <None Include="bower_components\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="bower_components\jquery-validation\dist\jquery.validate.js" />
+    <None Include="bower_components\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="bower_components\jquery-validation\Gruntfile.js" />
+    <None Include="bower_components\jquery-validation\LICENSE.md" />
+    <None Include="bower_components\jquery-validation\README.md" />
+    <None Include="bower_components\jquery-validation\src\additional\accept.js" />
+    <None Include="bower_components\jquery-validation\src\additional\additional.js" />
+    <None Include="bower_components\jquery-validation\src\additional\alphanumeric.js" />
+    <None Include="bower_components\jquery-validation\src\additional\bankaccountNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\bankorgiroaccountNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\bic.js" />
+    <None Include="bower_components\jquery-validation\src\additional\cifES.js" />
+    <None Include="bower_components\jquery-validation\src\additional\cpfBR.js" />
+    <None Include="bower_components\jquery-validation\src\additional\creditcardtypes.js" />
+    <None Include="bower_components\jquery-validation\src\additional\currency.js" />
+    <None Include="bower_components\jquery-validation\src\additional\dateFA.js" />
+    <None Include="bower_components\jquery-validation\src\additional\dateITA.js" />
+    <None Include="bower_components\jquery-validation\src\additional\dateNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\extension.js" />
+    <None Include="bower_components\jquery-validation\src\additional\giroaccountNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\iban.js" />
+    <None Include="bower_components\jquery-validation\src\additional\integer.js" />
+    <None Include="bower_components\jquery-validation\src\additional\ipv4.js" />
+    <None Include="bower_components\jquery-validation\src\additional\ipv6.js" />
+    <None Include="bower_components\jquery-validation\src\additional\lettersonly.js" />
+    <None Include="bower_components\jquery-validation\src\additional\letterswithbasicpunc.js" />
+    <None Include="bower_components\jquery-validation\src\additional\mobileNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\mobileUK.js" />
+    <None Include="bower_components\jquery-validation\src\additional\nieES.js" />
+    <None Include="bower_components\jquery-validation\src\additional\nifES.js" />
+    <None Include="bower_components\jquery-validation\src\additional\notEqualTo.js" />
+    <None Include="bower_components\jquery-validation\src\additional\nowhitespace.js" />
+    <None Include="bower_components\jquery-validation\src\additional\pattern.js" />
+    <None Include="bower_components\jquery-validation\src\additional\phoneNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\phonesUK.js" />
+    <None Include="bower_components\jquery-validation\src\additional\phoneUK.js" />
+    <None Include="bower_components\jquery-validation\src\additional\phoneUS.js" />
+    <None Include="bower_components\jquery-validation\src\additional\postalcodeBR.js" />
+    <None Include="bower_components\jquery-validation\src\additional\postalCodeCA.js" />
+    <None Include="bower_components\jquery-validation\src\additional\postalcodeIT.js" />
+    <None Include="bower_components\jquery-validation\src\additional\postalcodeNL.js" />
+    <None Include="bower_components\jquery-validation\src\additional\postcodeUK.js" />
+    <None Include="bower_components\jquery-validation\src\additional\require_from_group.js" />
+    <None Include="bower_components\jquery-validation\src\additional\skip_or_fill_minimum.js" />
+    <None Include="bower_components\jquery-validation\src\additional\statesUS.js" />
+    <None Include="bower_components\jquery-validation\src\additional\strippedminlength.js" />
+    <None Include="bower_components\jquery-validation\src\additional\time.js" />
+    <None Include="bower_components\jquery-validation\src\additional\time12h.js" />
+    <None Include="bower_components\jquery-validation\src\additional\url2.js" />
+    <None Include="bower_components\jquery-validation\src\additional\vinUS.js" />
+    <None Include="bower_components\jquery-validation\src\additional\zipcodeUS.js" />
+    <None Include="bower_components\jquery-validation\src\additional\ziprange.js" />
+    <None Include="bower_components\jquery-validation\src\ajax.js" />
+    <None Include="bower_components\jquery-validation\src\core.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ar.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_bg.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_bn_BD.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ca.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_cs.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_da.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_de.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_el.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_es.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_es_AR.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_es_PE.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_et.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_eu.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_fa.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_fi.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_fr.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ge.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_gl.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_he.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_hr.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_hu.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_hy_AM.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_id.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_is.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_it.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ja.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ka.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_kk.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ko.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_lt.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_lv.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_my.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_nl.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_no.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_pl.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_pt_BR.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_pt_PT.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ro.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_ru.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_si.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_sk.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_sl.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_sr.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_sr_lat.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_sv.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_th.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_tj.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_tr.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_uk.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_vi.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_zh.js" />
+    <None Include="bower_components\jquery-validation\src\localization\messages_zh_TW.js" />
+    <None Include="bower_components\jquery-validation\src\localization\methods_de.js" />
+    <None Include="bower_components\jquery-validation\src\localization\methods_es_CL.js" />
+    <None Include="bower_components\jquery-validation\src\localization\methods_fi.js" />
+    <None Include="bower_components\jquery-validation\src\localization\methods_nl.js" />
+    <None Include="bower_components\jquery-validation\src\localization\methods_pt.js" />
+    <None Include="bower_components\jquery\dist\jquery.js" />
+    <None Include="bower_components\jquery\dist\jquery.min.js" />
+    <None Include="bower_components\jquery\dist\jquery.min.map" />
+    <None Include="bower_components\jquery\README.md" />
+    <None Include="bower_components\jquery\src\.jshintrc" />
+    <None Include="bower_components\jquery\src\ajax.js" />
+    <None Include="bower_components\jquery\src\ajax\jsonp.js" />
+    <None Include="bower_components\jquery\src\ajax\load.js" />
+    <None Include="bower_components\jquery\src\ajax\parseJSON.js" />
+    <None Include="bower_components\jquery\src\ajax\parseXML.js" />
+    <None Include="bower_components\jquery\src\ajax\script.js" />
+    <None Include="bower_components\jquery\src\ajax\var\location.js" />
+    <None Include="bower_components\jquery\src\ajax\var\nonce.js" />
+    <None Include="bower_components\jquery\src\ajax\var\rquery.js" />
+    <None Include="bower_components\jquery\src\ajax\xhr.js" />
+    <None Include="bower_components\jquery\src\attributes.js" />
+    <None Include="bower_components\jquery\src\attributes\attr.js" />
+    <None Include="bower_components\jquery\src\attributes\classes.js" />
+    <None Include="bower_components\jquery\src\attributes\prop.js" />
+    <None Include="bower_components\jquery\src\attributes\support.js" />
+    <None Include="bower_components\jquery\src\attributes\val.js" />
+    <None Include="bower_components\jquery\src\callbacks.js" />
+    <None Include="bower_components\jquery\src\core.js" />
+    <None Include="bower_components\jquery\src\core\access.js" />
+    <None Include="bower_components\jquery\src\core\init.js" />
+    <None Include="bower_components\jquery\src\core\parseHTML.js" />
+    <None Include="bower_components\jquery\src\core\ready.js" />
+    <None Include="bower_components\jquery\src\core\support.js" />
+    <None Include="bower_components\jquery\src\core\var\rsingleTag.js" />
+    <None Include="bower_components\jquery\src\css.js" />
+    <None Include="bower_components\jquery\src\css\addGetHookIf.js" />
+    <None Include="bower_components\jquery\src\css\adjustCSS.js" />
+    <None Include="bower_components\jquery\src\css\curCSS.js" />
+    <None Include="bower_components\jquery\src\css\defaultDisplay.js" />
+    <None Include="bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <None Include="bower_components\jquery\src\css\showHide.js" />
+    <None Include="bower_components\jquery\src\css\support.js" />
+    <None Include="bower_components\jquery\src\css\var\cssExpand.js" />
+    <None Include="bower_components\jquery\src\css\var\getStyles.js" />
+    <None Include="bower_components\jquery\src\css\var\isHidden.js" />
+    <None Include="bower_components\jquery\src\css\var\rmargin.js" />
+    <None Include="bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <None Include="bower_components\jquery\src\css\var\swap.js" />
+    <None Include="bower_components\jquery\src\data.js" />
+    <None Include="bower_components\jquery\src\data\accepts.js" />
+    <None Include="bower_components\jquery\src\data\Data.js" />
+    <None Include="bower_components\jquery\src\data\support.js" />
+    <None Include="bower_components\jquery\src\data\var\acceptData.js" />
+    <None Include="bower_components\jquery\src\data\var\dataPriv.js" />
+    <None Include="bower_components\jquery\src\data\var\dataUser.js" />
+    <None Include="bower_components\jquery\src\deferred.js" />
+    <None Include="bower_components\jquery\src\deprecated.js" />
+    <None Include="bower_components\jquery\src\dimensions.js" />
+    <None Include="bower_components\jquery\src\effects.js" />
+    <None Include="bower_components\jquery\src\effects\animatedSelector.js" />
+    <None Include="bower_components\jquery\src\effects\support.js" />
+    <None Include="bower_components\jquery\src\effects\Tween.js" />
+    <None Include="bower_components\jquery\src\event.js" />
+    <None Include="bower_components\jquery\src\event\ajax.js" />
+    <None Include="bower_components\jquery\src\event\alias.js" />
+    <None Include="bower_components\jquery\src\event\focusin.js" />
+    <None Include="bower_components\jquery\src\event\support.js" />
+    <None Include="bower_components\jquery\src\event\trigger.js" />
+    <None Include="bower_components\jquery\src\exports\amd.js" />
+    <None Include="bower_components\jquery\src\exports\global.js" />
+    <None Include="bower_components\jquery\src\intro.js" />
+    <None Include="bower_components\jquery\src\jquery.js" />
+    <None Include="bower_components\jquery\src\manipulation.js" />
+    <None Include="bower_components\jquery\src\manipulation\buildFragment.js" />
+    <None Include="bower_components\jquery\src\manipulation\createSafeFragment.js" />
+    <None Include="bower_components\jquery\src\manipulation\getAll.js" />
+    <None Include="bower_components\jquery\src\manipulation\setGlobalEval.js" />
+    <None Include="bower_components\jquery\src\manipulation\support.js" />
+    <None Include="bower_components\jquery\src\manipulation\var\nodeNames.js" />
+    <None Include="bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <None Include="bower_components\jquery\src\manipulation\var\rleadingWhitespace.js" />
+    <None Include="bower_components\jquery\src\manipulation\var\rscriptType.js" />
+    <None Include="bower_components\jquery\src\manipulation\var\rtagName.js" />
+    <None Include="bower_components\jquery\src\manipulation\wrapMap.js" />
+    <None Include="bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <None Include="bower_components\jquery\src\offset.js" />
+    <None Include="bower_components\jquery\src\outro.js" />
+    <None Include="bower_components\jquery\src\queue.js" />
+    <None Include="bower_components\jquery\src\queue\delay.js" />
+    <None Include="bower_components\jquery\src\selector-native.js" />
+    <None Include="bower_components\jquery\src\selector-sizzle.js" />
+    <None Include="bower_components\jquery\src\selector.js" />
+    <None Include="bower_components\jquery\src\serialize.js" />
+    <None Include="bower_components\jquery\src\support.js" />
+    <None Include="bower_components\jquery\src\traversing.js" />
+    <None Include="bower_components\jquery\src\traversing\findFilter.js" />
+    <None Include="bower_components\jquery\src\traversing\var\dir.js" />
+    <None Include="bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <None Include="bower_components\jquery\src\traversing\var\siblings.js" />
+    <None Include="bower_components\jquery\src\var\arr.js" />
+    <None Include="bower_components\jquery\src\var\class2type.js" />
+    <None Include="bower_components\jquery\src\var\concat.js" />
+    <None Include="bower_components\jquery\src\var\deletedIds.js" />
+    <None Include="bower_components\jquery\src\var\document.js" />
+    <None Include="bower_components\jquery\src\var\documentElement.js" />
+    <None Include="bower_components\jquery\src\var\hasOwn.js" />
+    <None Include="bower_components\jquery\src\var\indexOf.js" />
+    <None Include="bower_components\jquery\src\var\pnum.js" />
+    <None Include="bower_components\jquery\src\var\push.js" />
+    <None Include="bower_components\jquery\src\var\rcssNum.js" />
+    <None Include="bower_components\jquery\src\var\rnotwhite.js" />
+    <None Include="bower_components\jquery\src\var\slice.js" />
+    <None Include="bower_components\jquery\src\var\support.js" />
+    <None Include="bower_components\jquery\src\var\toString.js" />
+    <None Include="bower_components\jquery\src\wrap.js" />
+    <None Include="wwwroot\js\book-index.js" />
+    <None Include="wwwroot\js\book-index.min.js" />
+    <None Include="wwwroot\js\bookAuthor.min.js" />
+    <None Include="wwwroot\js\index.js" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="glyphicon" Version="1.0.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportViewer.2012.Runtime" Version="11.0.3452" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2020.2.3" />
+    <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="18.1.0.55" />
+    <PackageReference Include="Syncfusion.EJ" Version="18.1.0.55" />
+    <PackageReference Include="Syncfusion.EJ.AspNet.Core" Version="18.1.0.55" />
+    <PackageReference Include="Syncfusion.EJ.ReportViewer.AspNet.Core" Version="18.1.0.55" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="18.1.0.55" />
+    <PackageReference Include="Syncfusion.Report.Net.Core" Version="18.1.0.55" />
+    <PackageReference Include="Syncfusion.XlsIORenderer.Net.Core" Version="18.1.0.55" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DLL\DLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+
+</Project>

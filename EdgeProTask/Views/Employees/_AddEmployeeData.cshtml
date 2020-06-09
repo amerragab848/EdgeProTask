@@ -1,0 +1,43 @@
+﻿@model EmployeeDataVM
+@using EdgeProTask.Models
+
+<form asp-action="AddEmployeeData" asp-controller="EmplyeeData" role="form">
+    @await Html.PartialAsync("_ModalHeader", new ModalHeader { Heading = "Add Employee Data" })
+    <div class="modal-body form-horizontal">
+        <div class="form-group">
+            <label asp-for="Age" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="Age" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="City" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="City" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="State" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="State" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ZipCode" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="ZipCode" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address" class="col-lg-3 col-sm-3 control-label"></label>
+            <div class="col-lg-6">
+                <input asp-for="Address" class="form-control" />
+            </div>
+        </div>
+    </div>
+       
+    
+    @await Html.PartialAsync("_ModalFooter", new ModalFooter { })
+</form>
+
+

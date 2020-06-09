@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Contents/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Contents/header-v5.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header-v5 header-static">
+        <div class="navbar navbar-default mega-menu" role="navigation">
+            <div class="container">
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    @Html.Raw(ViewBag.Tree)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

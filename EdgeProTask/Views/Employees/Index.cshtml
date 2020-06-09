@@ -1,0 +1,56 @@
+﻿@model IEnumerable<EmployeeListingVM>
+@using EdgeProTask.Models
+@using EdgeProTask.Code
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="top-buffer">
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading panel-head"> Emplyees </div>
+    <div class="panel-body">
+        <div class="btn-group">
+            <a id="createEditAuthorModal" data - toggle="modal" asp-action="AddEmployee" data-target="#modal-action-Employee" class="btn btn-primary">
+                <i class="glyphicon glyphicon-plus"> </i> Add Employee
+            </a>
+        </div> <div class="top-buffer">
+        </div> <table class="table table-bordered table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> SSN </th>
+                    <th> Action </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td> @Html.DisplayFor(modelItem => item.SSN) </td>
+                        <td>
+                            <a id="editAuthorModal" data-toggle="modal" asp-action="EditEmployee" asp-controller="Employees" asp-route-id="@item.Id" data-target="#modal-action-Employee" class="btn btn-info">
+                                <i class="glyphicon glyphicon-pencil"> </i> Edit
+                            </a>
+                            <a id="addBookModal" data-toggle="modal" asp-action="AddEmployeeData" asp-controller="EmplyeeData" asp-route-id="@item.Id" data-target="#modal-action-EmployeeData" class="btn btn-success">
+                                <i class="glyphicon glyphicon-book">
+                                </i> Employee Data
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@Html.PartialAsync("_Modal", new BootstrapModel
+{
+    ID = "modal-action-Employee",
+    AreaLabeledId = "modal-action-Employee-label",
+    Size = ModalSize.Large
+})
+@section scripts {
+}

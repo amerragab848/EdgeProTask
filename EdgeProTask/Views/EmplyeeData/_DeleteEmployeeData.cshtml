@@ -1,0 +1,11 @@
+﻿@model string
+@using EdgeProTask.Models
+
+<form asp-action="DeleteEmployeeData" role="form">
+    @Html.PartialAsync("_ModalHeader", new ModalHeader { Heading = "Delete Employee Data" })
+
+    <div class="modal-body form-horizontal">
+        Are you want to delete @Model?
+    </div>
+    @Html.PartialAsync("_ModalFooter", new ModalFooter { SubmitButtonText = "Delete" })
+</form>
